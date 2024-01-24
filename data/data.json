@@ -9,7 +9,7 @@
       "RawMaterialSource": "FSC Certified",
       "WasteGeneration": 20,
       "EnvironmentalImpactScore": 8.5,
-      "Output": "Low"
+      "Output": "High"
     },
     {
       "PackagingMaterial": "Plastic",
@@ -21,7 +21,7 @@
       "RawMaterialSource": "Petrochemicals",
       "WasteGeneration": 15,
       "EnvironmentalImpactScore": 4.2,
-      "Output": "High"
+      "Output": "Low"
     },
     {
       "PackagingMaterial": "Glass",
@@ -57,7 +57,7 @@
       "RawMaterialSource": "Ore Mining",
       "WasteGeneration": 30,
       "EnvironmentalImpactScore": 7.8,
-      "Output": "Low"
+      "Output": "High"
     },
     {
       "PackagingMaterial": "PaperBoat",
@@ -69,7 +69,7 @@
       "RawMaterialSource": "FSC Certified",
       "WasteGeneration": 22,
       "EnvironmentalImpactScore": 8.1,
-      "Output": "Low"
+      "Output": "High"
     }
   ]
   

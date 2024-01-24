@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form onsubmit="getJsonData()">
+            <label>Select your packaging material</label>
+            <select id="selectedMaterial">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option>Paper</option>
+                <option>Plastic</option>
+                <option>Glass</option>
+                <option>Biodegradable Plastics</option>
+                <option>Metal</option>
+                <option>PaperBoat</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script>
+        const getData = () => {
+            event.preventDefault();
+            const selectedMaterial = document.getElementById("selectedMaterial").value;
+            document.getElementById("result").innerHTML = selectedMaterial;
+        }
+
+        const getJsonData = async () => {
+            event.preventDefault();
+            try{
+            const data = await fetch("../data/data.json");
+            const responseData = await data.json();
+            console.log(responseData);
+            } catch {
+                console.error("Error fetching data");
+            }
+        }
+    </script>
+</body>
+
+</html>
