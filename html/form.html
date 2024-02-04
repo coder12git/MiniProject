@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoPacCalc</title>
     <style>
@@ -121,7 +120,8 @@
             <span style="font-weight: bold; font-size: 1.5rem; color: white;">EcoPacCalc</span>
         </div>
         <div>
-            <a href="/">Popular</a>
+            <a href="popular.html">Popular</a>
+            <a href="form.html">Calculate</a>
             <a href="/">Home</a>
             <a href="/" style="background-color: white; color: #FFA500;">LogOut</a>
         </div>
@@ -137,7 +137,7 @@
                 <option>Glass</option>
                 <option>Biodegradable Plastics</option>
                 <option>Metal</option>
-                <option>Paper Boat</option>
+                <option>Paper Board</option>
             </select>
             <button type="submit" id="search">Submit</button>
         </form>
@@ -265,9 +265,9 @@
                document.getElementById("8").innerHTML="Waste Generation: 30";
                document.getElementById("9").innerHTML="Environmental Impact Score: 7.8";
             }
-            if(res==="Paper Boat"){
+            if(res==="Paper Board"){
                document.getElementById("0").innerHTML = "Sustainability: High";
-            //    document.getElementById("1").innerHTML="Packaging Material : Paper Boats";
+            //    document.getElementById("1").innerHTML="Packaging Material : Paper Boards";
                document.getElementById("2").innerHTML="Carbon Footprint: 160";
                document.getElementById("3").innerHTML="Recyclability: 75";
                document.getElementById("4").innerHTML="Biodegradability: 85";
