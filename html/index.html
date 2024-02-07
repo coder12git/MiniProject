@@ -1,113 +1,181 @@
-<!---Landing page HTML--->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <title>Web Design Mastery | MEDIBuddy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">">
+    <link rel="stylesheet" href="style.css">
+    <title>soumyajit</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="nav__logo">PACKAGING CALCULATOR</div>
-            <ul class="nav__links">
-                <li class="link"><a href="#">Home</a></li>
-                <li class="link"><a href="#about us">About Us</a></li>
-                <li class="link"><a href="#">Calculator</a></li>
-                <li class="link"><a href="#">Blog</a></li>
-                <li class="link"><a href="#">Contact</a></li>
-            </ul>
-            <button class="btn">Register Now</button>
-        </nav>
-        <header class="header">
-            <div class="content">
-                <h1><span>output for</span><br />Sustainable Packaging</h1>
-                <p>
-                    Sustainable packaging is packaging that produces the most negligible impact on the natural
-                    environment. Which is to say, sustainable packaging materials are those that make the least amount
-                    of pollution in regards to manufacturing, production, shipping, and disposal or recycling.
-                    This translates to increased utilization of life cycle inventories and the assessments of said life
-                    cycles in an attempt to help guide the implementation of packaging materials which reduces the
-                    negative impact to the environment and a reduced ecological footprint.
-                </p>
-                <button class="btn">More Details</button>
+    <nav class="navbar background">
+        <ul class="nav-list">
+
+            <div class="logo"><img src="logo.jpg" alt="logo">APP</div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" aria-label="Search" id="search">
+            <button class="btn btn-sm" type="submit">Search</button>
+            <button class="btn btn-sm" type="submit">Register Now</button>
+        </div>
+    </nav>
+    <section class="background sec">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="text-big">WHAT IS SUSTAINABLE PACKAGING?</p>
+                <p class="text-small">Sustainable packaging is any type of eco-friendly material used to wrap, store,
+                    ship or shelve products.Sustainable packaging is an increasingly popular form of sustainable
+                    packaging. It protects food products similarly to regular packaging, displaying the properties and
+                    resilience of traditional materials, however it breaks down fully in the ground into beneficial
+                    organic compost.
+
+                    Sustainable packaging is any type of eco-friendly material used to wrap, store, ship or shelve
+                    products.</p>
+                <form action="https://tipa-corp.com/sustainable-packaging/">
+                    <button class="bt" type="submit">Learn More</button>
+                </form>
             </div>
-            <div class="image">
-                <span class="image__bg"></span>
-                <img src="../header-bg.jpg" alt="header image" />
-                <div class="image__content image__content__1">
-                    <span><i class="ri-user-3-line"></i></span>
-                    <div class="details">
-                        <h4>1520+</h4>
-                        <p>Active Users</p>
+            <div class="secondhalf">
+                <img src="cover.png" alt="cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <p>The Importance of Sustainable Packaging</p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="about.webp" alt="Geeksforgeeks">
+            </div>
+            <div>
+                <p> A crucial aspect of delivering sustainable products and services is sustainable packaging. In
+                    designing sustainable packaging for a product, companies need to answer a few questions, including:
+                    will it attract consumers to the product; how much will it cost; and will it provide needed
+                    protection for my product? Sustainable packaging is not always attractive, economical or sturdy;
+                    whereby unsustainable packaging may be cheap, convenient and strong, it is resource-intensive and
+                    wasteful.
+
+                    Why implement sustainable packaging? While sustainable packaging may be more expensive than
+                    conventional packaging, there are several benefits to it.
+                </p>
+                <form action="https://www.adecesg.com/">
+                    <button class="bt" type="submit">More Details</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team">
+        <h1>Meet Our Team</h1>
+        <div class="team-cards">
+            <div class="card">
+                <div class="card-img">
+                    <img src="aritro.jpg" alt="User 1">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">A.GHOSAL</h2>
+                    <p class="card-role">Co-Manager</p>
+                    <p class="card-email">aritro@gmail.com</p>
+                    <p><button class="bt" type="submit">contact</button></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="me.jpg" alt="User 2">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">S.KUNDU</h2>
+                    <p class="card-role">CEO-Founder</p>
+                    <p class="card-email">soumyajit@gmail.com</p>
+                    <p><button class="bt" type="submit">contact</button></p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="suruchi.jpg" alt="User 3">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">S.KUMARI</h2>
+                    <p class="card-role">CEO</p>
+                    <p class="card-email">suruchi@gmail.com</p>
+                    <p><button class="bt" type="submit">contact</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>if you have face some issues with this site so please contact us , we try to fix your problem</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>2021 sukantonagar road,<br>RA-market,saltlake,<br>700012</p>
                     </div>
                 </div>
-                <div class="image__content image__content__2">
-                    <ul>
-                        <li>
-                            <span><i class="ri-check-line"></i></span>
-                            Best sustainable packaging materials
-                        </li>
-                        <li>
-                            <span><i class="ri-check-line"></i></span>
-                            Chack Reviews
-                        </li>
-                    </ul>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>987-654-3210</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>joguvai453@gmail.com</p>
+                    </div>
                 </div>
             </div>
-        </header>
-    </div>
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" aria-label="name" class="name">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" aria-label="mail" class="name">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" aria-label="mess" class="name">
+                        <span>write your message</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="reset" aria-label="mess" class="btn-sn">
+                        <button class="btn-sn" type="submit">
+                            Send
+                        </button>
 
-    <div class="container 2">
-        <nav>
-            <div class="logo">ABOUT</div>
-        </nav>
-        <header class="body-1">
-            <div class="text1" id="about us">
-                <h2><span>What Makes A Packaging Material Sustainable?</span></h2>
-                <p>
-                    The sustainability of a packaging material is defined by the impact that said material has on the
-                    natural environment when compared to alternative materials. This can be complicated as various
-                    packaging materials claim to be sustainable but are not
-                    sustainable when compared to other types of packaging materials currently available
-                </p>
+                    </div>
+                </form>
             </div>
-            <div class="image1">
-                <span class="image1__bg"></span>
-                <img src="../header1.jpg" alt="header image" />
-    
-            </div>
-        </header>
-        
-        <header class="body-2">
-            <div class="text2">
-                <h2><span>What Makes A Packaging Material Sustainable?</span></h2>
-                <p>
-                    It’s widely known that the world’s current disposal system has not been able to adapt to the growing
-                    market’s dependance on plastic packaging, while failing to capture its economic benefits.
-                    In fact, more than 40 years after the launch of the first universal recycling symbol, just 14% of
-                    the plastic packaging used globally is recycled, while 40% ends up in landfills and 32% in
-                    ecosystems, with the remaining 14% used for incineration or energy recovery (The SustainAbility
-                    Institute).
-
-                    The good news is that plastics are sustainable when they are circular. By applying the circular
-                    economy and its three main principles – the 3R’s: reduce, reuse, and recycle –, it is possible to
-                    save both environmental and financial resources in industrial plastic packaging worldwide. Here is
-                    how.
-                </p>
-            </div>
-            <div class="image2">
-                <span class="image2__bg"></span>
-                <img src="../header2.jpg" alt="header image" />
-    
-            </div>
-        </header>
-       
-    </div>
+        </div>
+    </section>
 </body>
 
 </html>
