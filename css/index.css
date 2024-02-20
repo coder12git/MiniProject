@@ -327,12 +327,15 @@ width: 40%;
     width: 42%;
     padding: 19px 22px;
     background: #fff;
+    border-radius: 40px;
+    border: 6px solid #c08f42;
 }
 .contactform h2{
-    font-size: 40px;
-    color: #333;
-    font-weight: 500;
-    margin: 1px -2px;
+    font-size: 43px;
+  color: #321010;
+  font-weight: 58%;
+  margin: 3px 0px;
+  text-align: center;
 }
 .contactform .inputbox{
     position: relative;
@@ -340,14 +343,16 @@ width: 40%;
     margin-top: 10px;
     cursor: pointer;
 }
-.name {
+.item {
     width: 100%;
-    padding: 7px 0;
-    font-size: 15px;
+    padding: 12px 0px;
+    font-size: 14px;
     margin: 11px 0px;
     border: none;
-    border-bottom: 2px solid #30cdd5;
+    border-bottom: 3px solid #30cdd5;
     outline: none;
+    resize: none;
+
 }
 .contactform .inputbox span{
     position: absolute;
@@ -359,18 +364,105 @@ width: 40%;
     transition: 0.5s;
     color: rgb(23, 24, 24);
 }
-.contactform .inputbox .name:focus ~ span,
-.contactform .inputbox .name:valid ~ span{
 
-    color: rgb(13, 11, 173);
-    font-size: 15px;
-    transform: translateY(-20px);
+.inputbox .error-txt{
+    font-size: 14px;
+  color: red;
+  text-align: left;
+  margin: -8px 0px;
+  display: none;
+}
+.btnO{
+    padding: 4px 26px;
+    margin: 12px 3px;
+    border-radius: 10px;
+    background: #0ef;
+    color: #0e0b0b;
+    box-shadow: 0 0 10px rgb(53, 249, 204);
+}
+.btnO:hover{
+    color: #267961;
 }
 
-.btn-sn{
-    padding: 5px 25px;
-    margin: 8px 0px;
-    border: 1px solid rgb(4, 4, 4);
-    background: #30cdd5;
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background: #0E0921
+  }
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+  .footer-row .footer-col h4 {
     color: #fff;
-}
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #8e8c8c;
+  }
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 42px;
+  border-radius: 10px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 2px solid #7489C6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+
+  }
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  .footer-col form button:hover {
+    background: #cd942b;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 47px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    color: #ffffff;
+  }
+  
+  .footer-col .icons i:hover  {
+    color: #c98c0a;
+  }
