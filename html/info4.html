@@ -113,7 +113,7 @@
         <div>
             <a href="popular.html">Popular</a>
             <a href="form.html">Calculate</a>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="login.html" style="background-color: white; color: #FFA500;">LogOut</a>
         </div>
     </nav>
@@ -146,64 +146,62 @@
                 </ul>
             </div>
             <div class="right-side">
-                <h1>
-                    <strong><u>Summary</u></strong>
-                </h1>
+                <h1><strong><u>Summary</u></strong></h1>
                 <br />
-                <p>Paper is arguably the most popular packaging material in the manufacturing and distribution sector. Paper is so attractive because it is eco-friendly, functional, flexible, and can be easily designed to portray brand information and colors. Paper packaging may include SBS (solid bleached sulfate) paperboard, kraft paper, or rigid boxes.
-
-                    SBS paperboard is made from paper pulp and is stronger than ordinary paper but thinner than cardboard. It can be used to package frozen foods, medicine, juice, cosmetics, and more.</p>
-                <br />
-                <h2>
-                    <strong><u>Paper-based packaging products including:</u></strong>
-                </h2>
-                <br />
+                <p>Metal packaging is widely recognized for its durability, strength, and recyclability, making it a
+                    popular choice for various consumer products. <u><strong>It offers several advantages over other packaging
+                    materials, including:</strong></u></p>
                 <ul>
-                    <li>Custom Tissue Paper</li>
-                    <li>Custom Kraft Tissue Paper</li>
-                    <li>Custom Kraft Mailers</li>
-                    <li>Custom Stickers</li>
-                    <li>Custom Food Wrapping Paper</li>
-                    <li>Custom Wax Paper</li>
-                    <li>Custom Hangtags</li>
-                    <li>Custom Cards</li>
+                    <li>Durability: Metal packaging provides excellent protection for products, ensuring they remain
+                        intact during handling, shipping, and storage.</li>
+                    <li>Barrier properties: Metal containers offer superior barrier properties, protecting contents from
+                        light, moisture, oxygen, and other environmental factors.</li>
+                    <li>Recyclability: Metals such as aluminum and steel are infinitely recyclable without losing
+                        quality, making metal packaging a sustainable choice for eco-conscious consumers and businesses.
+                    </li>
+                    <li>Longevity: Metal packaging can withstand extreme temperatures and harsh conditions, prolonging
+                        the shelf life of products and reducing waste.</li>
+                    <li>Aesthetic appeal: Metal containers offer a sleek and modern appearance, enhancing the perceived
+                        value of products and brands.</li>
                 </ul>
                 <br />
-                <p>Kraft paper is made using the sulfate pulping process and is meant for users looking for paper packaging that’s made using more sustainable processes. It’s notable for its durability, but is much less resistant to moisture compared to SBS paperboard.
-
-                    This makes it unsuitable for packaging frozen foods and many other types of food products. It is, however, perfect for boxing every other type of product and is also excellent for wrapping items.
-                    
-                    
-                    noissue Compostable Custom Kraft Mailers are fully customizable and versatile in their application.
-                    Rigid boxes are made from highly condensed paperboard which gives them a premium look and feel. They are generally used to package luxury items.
-                    
-                    Paper can be used to create anything from bags to boxes and envelopes</p>
+                <p><u></u><strong>Common applications of metal packaging include:</strong></u></p>
+                <ul>
+                    <li>Cans for beverages (e.g., soda, beer, canned coffee)</li>
+                    <li>Food containers (e.g., canned fruits, vegetables, soups)</li>
+                    <li>Cosmetic and personal care products (e.g., aerosol cans, metal tubes)</li>
+                    <li>Household products (e.g., aerosol sprays, paint cans)</li>
+                    <li>Pharmaceutical packaging (e.g., metal pill bottles, aerosol inhalers)</li>
+                </ul>
+                <br />
+                <p>Overall, metal packaging offers a combination of durability, sustainability, and aesthetic appeal,
+                    making it a preferred choice for a wide range of consumer goods.</p>
             </div>
+
         </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        useCORS: true;
+        <script>
+            useCORS: true;
 
-        window.onload = function () {
-            const btn = document.getElementById("downloadBtn");
-            btn.addEventListener("click", () => {
-                const recipe = this.document.getElementById("meals");
-                const options = {
-                    margin: 0,
-                    filename: "recipe.pdf",
-                    image: { type: "jpeg", quality: 0.98 },
-                    html2canvas: { scale: 2, useCORS: true },
-                    jsPDF: { format: "letter", orientation: "landscape" },
-                };
-                html2pdf().from(recipe).set(options).save();
-            });
-        };
-    </script>
+            window.onload = function () {
+                const btn = document.getElementById("downloadBtn");
+                btn.addEventListener("click", () => {
+                    const recipe = this.document.getElementById("meals");
+                    const options = {
+                        margin: 0,
+                        filename: "recipe.pdf",
+                        image: { type: "jpeg", quality: 0.98 },
+                        html2canvas: { scale: 2, useCORS: true },
+                        jsPDF: { format: "letter", orientation: "landscape" },
+                    };
+                    html2pdf().from(recipe).set(options).save();
+                });
+            };
+        </script>
 </body>
 
 </html>
